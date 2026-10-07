@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Form, Input, message } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
-import Spinner from "../components/Spinner";
+
 
 const Register = () => {
   const [loading, setLoading] = useState(false);
