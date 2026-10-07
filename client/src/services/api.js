@@ -5,7 +5,7 @@ import axios from "axios";
  * The proxy in client/package.json routes /api/v1/* to http://localhost:8080
  */
 const api = axios.create({
-  baseURL: "/api/v1",
+  baseURL: process.env.REACT_APP_API_URL || "/api/v1",
 });
 
 // ─── Request Interceptor — attach JWT from localStorage ───────────────────────
